@@ -8,9 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMS Techno Club</title>
 </head>
-<style>
-</style>
 <body>
+    <audio id="background-music">
+        <source src="Assets/music/Nintendo 3DS - Activity Log - Main Theme.mp3">
+    </audio>
+    <script>
+        window.addEventListener('click', () => {
+            document.getElementById("background-music").play();
+        });
+    </script>
     <header>
         <div>
         <pre><img src="Assets/Tarlac_Montessori_School2.png" alt="TMS Logo"><h1>Welcome to</h1>
@@ -60,7 +66,6 @@
         <br>
         <br>
         <br>
-        <!-- <h2 style="font-size: 35px;">Made by <p style="font-size: 25px;">Miguel Lara</p></h2> -->
     </footer>
 
 </body>
