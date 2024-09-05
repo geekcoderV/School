@@ -1,310 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" type="icon" href="Assets/Logo.png">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMS Techno Club</title>
+    <title>Tarlac Montessori School | Techno Club</title>
 </head>
-<style> 
-
-/* Main CSS for the responsive resolution */
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: monospace;
-    text-align: center;
-    background-color: rgb(35, 44, 54);
-}
-
-header {
-    text-align: center;
-    margin: 0px;
-    padding: 50px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.title {
-    margin: 0px;
-    padding: 0px;
-    font-family: pixelmania;
-    font-size: 70px;
-}
-
-.Logo {
-    width: 450px;
-}
-
-.header-content {
-    margin: 0px;
-    padding: 10px;
-}
-
-
-section {
-    margin: 0px;
-    padding: 15px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgb(35, 44, 54);
-}
-
-.Content {
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: relative;
-}
-
-.Columns {
-    width: 700px;
-    height: 950px;
-    margin: 20px;
-    padding: 0px;
-    border-style: solid;
-    border-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    align-content: justify;
-}
-
-.Columns:hover {
-    margin: 0px;
-    padding: 10px;
-    z-index: 2;
-}
-
-article {
-    margin: 0px;
-    padding: 20px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: rgb(35, 44, 54);
-}
-
-.article {
-    margin: 50px;
-    padding: 30px;
-}
-
-footer {
-    margin: 0px;
-    padding: 0px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-nav {
-    margin: 0px;
-    padding: 30px;
-    text-align: center;
-}
-
-.Icons {
-    margin: 5px;
-    width: 50px;
-}
-
-h1 {
-    color: white;
-    text-shadow: 0 0 3px, 0 0 4px;
-    font-size: 60px;
-}
-
-h2 {
-    color: white;
-    text-shadow: 0 0 3px, 0 0 4px;
-    font-size: 30px;
-}
-
-p {
-    color: white;
-    text-shadow: 0 0 3px, 0 0 4px;
-    font-size: 30px;
-}
-
-/* For all Phones that has a size of 400px screen */
-@media (max-width: 400px) {
-   
-   header {
-       text-align: center;
-       margin: 0px;
-       padding: 0px;
-       background-repeat: no-repeat;
-       background-size: 100%;
-   }
-   
-   .title {
-       margin: 0px;
-       padding: 0px;
-       font-size: 20px;
-   }
-
-   .Logo {
-       width: 200px;
-   }
-   
-   .header-content {
-       margin: 0px;
-       padding: 10px;
-   }
-   
-   
-   section {
-       margin: 0px;
-       padding: 20px;
-       text-align: center;
-       background-repeat: no-repeat;
-       background-size: 100%;
-   }
-   
-   .Content {
-       display: inline;
-   }
-   
-   .Columns {
-       width: 300px;
-       height: 420px;
-   }
-   
-   article {
-       margin: 0px;
-       padding: 0px;
-       text-align: center;
-       background-repeat: no-repeat;
-       background-size: 100%;
-   } 
-
-   .article {
-       margin: 0px;
-       padding: 20px;
-   }
-   
-   h1 {
-       font-size: 40px;
-   }
-
-   h2 {
-       font-size: 20px;
-   }
-
-   p {
-       font-size: 20px;
-   }
-}
-
-
-/* For all Desktop/Laptops with a screen size of 1200px */
-@media (min-width: 1200px) {
-    header {
-        text-align: center;
-        margin: 0px;
-        padding: 100px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    .title {
-        margin: 0px;
-        padding: 0px;
-        font-size: 40px;
-    }
-
-    .Logo {
-        width: 400px;
-    }
-    
-    .header-content {
-        margin: 0px;
-        padding: 10px;
-    }
-    
-    
-    section {
-        margin: 0px;
-        padding: 20px;
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    .Content {
-        display: flex;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        margin: auto;
-    }
-    
-    .Columns {
-        height: 470px;
-    }
-    
-    article {
-        margin: 0px;
-        padding: 0px;
-        text-align: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }        
-}
-
-</style>
 <body>
-    <audio id="background-music" loop>
-        <source src="Assets/music/Nintendo 3DS - Activity Log - Main Theme.mp3">
-    </audio>
-    <script>
-        window.addEventListener('click', () => {
-            document.getElementById("background-music").play();
-        });
-    </script>
     <header style="background-image: url(Assets/main\ wallpaper.png);">
-        <div class="header-content">
-        <pre><img src="Assets/Tarlac_Montessori_School2.png" alt="TMS Logo" class="Logo"><h2>Welcome to</h2><h1 class="title">TECHNO CLUB</h1><h2>S.Y 2024-2025</h2></pre>
+        <div class="head">
+            <img src="Assets/Tarlac_Montessori_School2.png" alt="TMS Main Logo" class="TMS-Main-Logo">
+            <h3>Welcome To</h3>
+            <h2 class="title">TMS TECHNO CLUB</h2>
+            <h3>S.Y 2024-2025</h3>
         </div>
     </header>
     <section>
         <h1>Our Skills</h1>
-        <div class="Content">
-            <div class="Columns" style="background-image: url('Assets/Video\ Editing.png');"></div>
-            <div class="Columns" style="background-image: url('Assets/Photo\ Editing.png');"></div>
-            <div class="Columns" style="background-image: url('Assets/Programming.png');"></div>
-        </div>
+        <div class="Columns" style="background-image: url(Assets/Photo\ Editing.png);"></div>
+        <div class="Columns" style="background-image: url(Assets/Video\ Editing.png);"></div>
+        <div class="Columns" style="background-image: url(Assets/Programming.png);"></div>
     </section>
     <article>
-        <div class="article">
-            <img src="Assets/Tarlac_Montessori_School.png" alt="TMS Logo" class="footer-logo">
-            <h1>About us</h1>
-            <p>
-                Techno Club is a group of eager students who aim to improve the technical skills we currently have, as well as garner new technical skills and use the said skills to produce quality digital content. We’ve come a long way since our founding as a group in 2019.  
-            </p>
-            <p>
-                With our passion we would be able to apply it through editing videos and photos, as well as programming languages and as a club we don’t just focus on skills but we also improve our characteristics such as Problem-Solving, Creative thinking, Communication and Management skills. 
-            </p>
-            <p>
-                We’d love to use our skills to collaborate with people.
-            </p>
+        <div class="details">
+        <img src="Assets/Tarlac_Montessori_School.png" alt="TMS Logo" class="TMS Logo">
+        <h1>About us</h1>
+        <p>Techno Club is a group of eager students who aim to improve the technical skills we currently have, as well as garner new technical skills and use the said skills to produce quality digital content. We’ve come a long way since our founding as a group in 2019.</p>
+        <br>
+        <p>With our passion we would be able to apply it through editing videos and photos, as well as programming languages and as a club we don’t just focus on skills but we also improve our characteristics such as Problem-Solving, Creative thinking, Communication and Management skills.</p>
+        <br>
+        <p>We’d love to use our skills to collaborate with people.</p>
         </div>
-        <br>
-        <br>
     </article>
     <footer style="background-image: url(Assets/footer.png);">
-        <div>
-        <nav>
+        <nav>            
             <a href="https://www.facebook.com/tmstechnoclub"><img src="Assets/Facebook Logo.png" alt="Facebook" class="Icons"></a>
             <a href="https://www.instagram.com/tmstechnoclub/?next=%2F"><img src="Assets/Instagram Logo.png" alt="Instagram" class="Icons"></a>
             <a href="https://www.youtube.com/channel/UCyM7tZtHncBrB3tozBrmHyA"><img src="Assets/Youtube Logo.png" alt="Youtube" class="Icons"></a>
             <a href="https://discord.gg/FAFepaka2B"><img src="Assets\Discord Logo.png" alt="Discord" class="Icons"></a>
         </nav>
-        </div>
     </footer>
 </body>
 </html>
