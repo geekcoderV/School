@@ -1,0 +1,206 @@
+/* All original Elements */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    background-color: rgb(35, 44, 54);
+}
+
+header {
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 44, 54);
+}
+
+article {
+    margin: 0px;
+    padding: 10px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 44, 54);
+}
+
+footer {
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    text-shadow: 0 0 3px, 0 0 4px;
+    font-size: 50px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0 0 3px, 0 0 4px;
+    font-size: 60px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    text-shadow: 0 0 3px, 0 0 4px;
+    font-size: 30px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0 0 3px, 0 0 4px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* All Classes */
+
+.head {
+    margin: 0px;
+    padding: 0px;
+}
+
+.TMS-Main-Logo {
+    width: 500px;
+}
+
+.title {
+    font-family: pixelmania;
+}
+
+.Columns {
+    display: inline-block;
+    width: 550px;
+    height: 800px;
+    margin: 20px;
+    padding: 0px;
+    border-style: solid;
+    border-color: white;
+    background-repeat: no-repeat;
+    background-size: cover, 100%;
+    transition: 0.5s;
+}
+
+.Columns:hover {
+    margin: 0px;
+    padding: 10px;
+}
+
+.details {
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.Icons {
+    margin: 10px;
+    width: 50px;
+}
+
+
+
+
+/*Media Queries*/
+/*400px resolution*/
+@media screen and (min-width: 400px) and (max-width: 1000px){
+    body {
+        background-color: rgb(35, 44, 54);
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+
+    p {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .head {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .TMS-Main-Logo {
+        width: 200px;
+    }
+
+    .title {
+        font-family: pixelmania;
+        font-size: 30px;
+    }
+
+    .Columns {
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+        margin: 20px;
+        padding: 0px;
+        border-style: solid;
+        border-color: white;
+        background-repeat: no-repeat;
+        background-size: cover, 100%;
+        transition: 0.5s;
+    }
+
+    .Columns:hover {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .details {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Icons {
+        margin: 5px;
+        width: 50px;
+    }
+}
