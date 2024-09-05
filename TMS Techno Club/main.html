@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" media="all" href="1200px-style.css">
-    <link rel="stylesheet" media="all" href="400px-style.css">
     <link rel="shortcut icon" type="icon" href="Assets/Logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMS Techno Club</title>
 </head>
 <style> 
+
+/* Main CSS for the responsive resolution */
 body {
     margin: 0px;
     padding: 0px;
@@ -129,6 +129,133 @@ p {
     text-shadow: 0 0 3px, 0 0 4px;
     font-size: 30px;
 }
+
+/* For all Phones that has a size of 400px screen */
+@media (max-width: 400px) {
+   
+   header {
+       text-align: center;
+       margin: 0px;
+       padding: 0px;
+       background-repeat: no-repeat;
+       background-size: 100%;
+   }
+   
+   .title {
+       margin: 0px;
+       padding: 0px;
+       font-size: 20px;
+   }
+
+   .Logo {
+       width: 200px;
+   }
+   
+   .header-content {
+       margin: 0px;
+       padding: 10px;
+   }
+   
+   
+   section {
+       margin: 0px;
+       padding: 20px;
+       text-align: center;
+       background-repeat: no-repeat;
+       background-size: 100%;
+   }
+   
+   .Content {
+       display: inline;
+   }
+   
+   .Columns {
+       width: 300px;
+       height: 420px;
+   }
+   
+   article {
+       margin: 0px;
+       padding: 0px;
+       text-align: center;
+       background-repeat: no-repeat;
+       background-size: 100%;
+   } 
+
+   .article {
+       margin: 0px;
+       padding: 20px;
+   }
+   
+   h1 {
+       font-size: 40px;
+   }
+
+   h2 {
+       font-size: 20px;
+   }
+
+   p {
+       font-size: 20px;
+   }
+}
+
+
+/* For all Desktop/Laptops with a screen size of 1200px */
+@media (min-width: 1200px) {
+    header {
+        text-align: center;
+        margin: 0px;
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .title {
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
+    }
+
+    .Logo {
+        width: 400px;
+    }
+    
+    .header-content {
+        margin: 0px;
+        padding: 10px;
+    }
+    
+    
+    section {
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .Content {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+    }
+    
+    .Columns {
+        height: 470px;
+    }
+    
+    article {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }        
+}
+
 </style>
 <body>
     <audio id="background-music" loop>
