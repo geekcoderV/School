@@ -15,6 +15,7 @@ body {
     font-family: monospace;
     text-align: center;
     background-color: rgb(35, 44, 54);
+    transition: 0.5s;
 }
 
 header {
@@ -46,12 +47,14 @@ section {
     margin: 0px;
     padding: 15px;
     text-align: center;
+    align-content: justify, center;
+    align-items: justify, center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgb(35, 44, 54);
 }
 
-.Content {
+/* .Content {
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -59,11 +62,11 @@ section {
     justify-content: center;
     flex-direction: row;
     position: relative;
-}
+} */
 
 .Columns {
     width: 700px;
-    height: 950px;
+    height: 1000px;
     margin: 20px;
     padding: 0px;
     border-style: solid;
@@ -71,13 +74,12 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.5s;
-    align-content: justify;
 }
 
 .Columns:hover {
     margin: 0px;
     padding: 10px;
-    z-index: 2;
+    position: relative;
 }
 
 article {
@@ -163,15 +165,20 @@ p {
        text-align: center;
        background-repeat: no-repeat;
        background-size: 100%;
+       justify-content: center;
    }
    
    .Content {
-       display: inline;
+        display: inline;
+        justify-content: center;
+        align-items: center;
    }
    
    .Columns {
-       width: 300px;
-       height: 420px;
+        margin: 30px;
+        padding: 0px;
+        width: 300px;
+        height: 420px;
    }
    
    article {
@@ -200,6 +207,41 @@ p {
    }
 }
 
+/* For all devices that has a screen of 800px */
+@media (max-width: 800px) {
+
+.title {
+    font-size: 40px;
+}
+.Content {
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.Columns {
+    width: 700px;
+    height: 1050px;
+    margin: 20px;
+    padding: 0px;
+    border-style: solid;
+    border-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    /* align-content: justify; */
+}
+
+.Columns:hover {
+    margin: 0px;
+    padding: 10px;
+}
+}
 
 /* For all Desktop/Laptops with a screen size of 1200px */
 @media (min-width: 1200px) {
@@ -244,7 +286,10 @@ p {
     }
     
     .Columns {
-        height: 470px;
+        background-size: cover;
+        position: relative;
+        width: 500px;
+        height: 800px;
     }
     
     article {
