@@ -144,7 +144,7 @@ a {
 /*400px resolution*/
 @media screen and (min-width: 400px) and (max-width: 1000px){
     body {
-        background-color: rgb(126, 186, 255);
+        background-color: #232c36;
     }
 
     section {
