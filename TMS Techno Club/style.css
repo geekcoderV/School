@@ -3,7 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: monospace;
-    background-color: rgb(126, 186, 255);
+    background-color: #232c36;
 }
 
 header {
@@ -21,7 +21,7 @@ section {
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(126, 186, 255);
+    background-color: #232c36;
 }
 
 article {
@@ -33,7 +33,7 @@ article {
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(126, 186, 255);
+    background-color: #232c36;
 }
 
 footer {
